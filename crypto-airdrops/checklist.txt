@@ -1,0 +1,53 @@
+
+=== AIRDROP CHECKING CHECKLIST ===
+Make your rounds, check eligibility, claim what's yours.
+
+Time: 15 mins per wallet
+Potential: $200-5000 per eligible airdrop
+
+--- LAYERZERO (layerzeroscan.com) ---
+□ Visit https://www.layerzero.foundation/
+□ Connect wallet
+□ Check eligibility
+□ If eligible: claim & bridge to mainnet
+
+--- ZKSYNC (claim.zksync.io) ---  
+□ Visit https://claim.zksync.io/
+□ Connect wallet
+□ Check allocation
+□ If eligible: claim before deadline
+
+--- STARKNET (provisions.starknet.io) ---
+□ Visit https://provisions.starknet.io/
+□ Connect wallet (Starknet wallet required)
+□ Check STRK allocation
+□ If eligible: claim
+
+--- SCROLL (claim.scroll.io) ---
+□ Visit https://claim.scroll.io/
+□ Connect wallet
+□ Check eligibility when announced
+□ Follow on Twitter for updates
+
+--- LINEA (claim.linea.build) ---
+□ Visit https://claim.linea.build/
+□ Check Voyager XP and POH status
+□ Watch for eligibility announcements
+
+=== BATCH PROCESSING ===
+Use these tools to check multiple at once:
+- https://zkdrop.io/ (Multiple L2s)
+- https://www.airdropchecker.xyz/
+- https://eari.io/ (Token claim tracking)
+
+=== RECORD KEEPING ===
+Track in spreadsheet:
+| Wallet | Airdrop | Eligible | Claimed | Value | Date |
+
+=== TAXES ===
+Airdrops are taxable events (even if you don't sell).
+- Record cost basis at claim time
+- FMV = value at receipt
+- Use Koinly or CoinTracker
+
+Next run: Check again weekly for new announcements
