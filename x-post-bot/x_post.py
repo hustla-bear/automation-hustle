@@ -5,9 +5,8 @@ from pathlib import Path
 
 try:
     from playwright.async_api import async_playwright
-    from playwright_stealth import stealth_async
 except ImportError:
-    print("pip install playwright playwright-stealth && playwright install chromium")
+    print("pip install playwright && playwright install chromium")
     sys.exit(1)
 
 class XPoster:
@@ -34,20 +33,20 @@ class XPoster:
         await page.goto("https://x.com/i/flow/login", wait_until="domcontentloaded")
         await asyncio.sleep(4)
         
+        # Email
         await page.fill('input[name="text"]', self.email, timeout=10000)
-        await asyncio.sleep(1)
         await page.click('div[role="button"]:has-text("Next")')
-        
         await asyncio.sleep(2)
-        await page.fill('input[name="password"]', self.password, timeout=10000)
-        await asyncio.sleep(1)
-        await page.click('div[data-testid="LoginForm_Login_Button"]')
         
+        # Password
+        await page.fill('input[name="password"]', self.password, timeout=10000)
+        await page.click('div[data-testid="LoginForm_Login_Button"]')
         await asyncio.sleep(5)
+        
         return "home" in page.url
     
     async def post_tweet(self, page, text: str) -> bool:
-        print(f"📝 Posting: {text[:60]}...")
+        print(f"📝 Posting: {text[:50]}...")
         await page.goto("https://x.com/compose/tweet", wait_until="domcontentloaded")
         await asyncio.sleep(3)
         
@@ -66,15 +65,14 @@ class XPoster:
         
         async with async_playwright() as p:
             browser = await p.chromium.launch(
-                headless=True,
-                args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled"]
+                headless=True,  # Server mode
+                args=["--no-sandbox", "--disable-dev-shm-usage"]
             )
             
             context = await browser.new_context(locale="en-US", timezone_id="America/New_York")
             await self.load_cookies(context)
             
             page = await context.new_page()
-            await stealth_async(page)
             
             # Check login
             await page.goto("https://x.com/home", wait_until="domcontentloaded")
@@ -97,13 +95,10 @@ class XPoster:
         return results
 
 async def main():
-    """CLI: python x_post.py 'Tweet text here'"""
     poster = XPoster()
-    
     if len(sys.argv) > 1:
         tweets = sys.argv[1:]
     else:
-        # Default test tweet
         tweets = ["Test tweet from automation 🤖"]
     
     results = await poster.post_thread(tweets)
