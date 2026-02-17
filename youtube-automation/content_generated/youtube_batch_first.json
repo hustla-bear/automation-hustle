@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "niche": "satisfaction",
+    "hook": "This code runs smoother than your morning coffee",
+    "title": "This Python trick saves 10 hours/week",
+    "timestamp": "2026-02-17T12:34:54.724245"
+  },
+  {
+    "id": 1,
+    "niche": "controversy",
+    "hook": "Why coding bootcamps are a scam",
+    "title": "This Python trick saves 10 hours/week",
+    "timestamp": "2026-02-17T12:34:54.724262"
+  },
+  {
+    "id": 2,
+    "niche": "satisfaction",
+    "hook": "The most satisfying automation you will see today",
+    "title": "From /bin/bash to 0K with ONE script",
+    "timestamp": "2026-02-17T12:34:54.724265"
+  },
+  {
+    "id": 3,
+    "niche": "controversy",
+    "hook": "Unpopular opinion: 9-5s are a trap",
+    "title": "I automated my entire income (proof)",
+    "timestamp": "2026-02-17T12:34:54.724268"
+  },
+  {
+    "id": 4,
+    "niche": "satisfaction",
+    "hook": "This code runs smoother than your morning coffee",
+    "title": "This Python trick saves 10 hours/week",
+    "timestamp": "2026-02-17T12:34:54.724270"
+  },
+  {
+    "id": 5,
+    "niche": "satisfaction",
+    "hook": "POV: You finally fixed that memory leak",
+    "title": "I automated my entire income (proof)",
+    "timestamp": "2026-02-17T12:34:54.724273"
+  },
+  {
+    "id": 6,
+    "niche": "satisfaction",
+    "hook": "This code runs smoother than your morning coffee",
+    "title": "From /bin/bash to 0K with ONE script",
+    "timestamp": "2026-02-17T12:34:54.724275"
+  },
+  {
+    "id": 7,
+    "niche": "controversy",
+    "hook": "AI will not replace you, but this might",
+    "title": "I automated my entire income (proof)",
+    "timestamp": "2026-02-17T12:34:54.724282"
+  },
+  {
+    "id": 8,
+    "niche": "money",
+    "hook": "This AI system prints money 24/7",
+    "title": "From /bin/bash to 0K with ONE script",
+    "timestamp": "2026-02-17T12:34:54.724285"
+  },
+  {
+    "id": 9,
+    "niche": "money",
+    "hook": "POV: Your automation just hit 0K",
+    "title": "I automated my entire income (proof)",
+    "timestamp": "2026-02-17T12:34:54.724287"
+  }
+]
